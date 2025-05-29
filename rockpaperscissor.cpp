@@ -37,7 +37,7 @@ Item read_item_item(int player) {
     std::cout << "Player " << player << ": Choose one (paper, scissors, rock): ";
     std::cin >> input;
 
-    // Eingabe in Kleinbuchstaben umwandeln, um unabhängig von Groß-/Kleinschreibung zu sein
+    // Convert input to lower case
     std::transform(input.begin(), input.end(), input.begin(), ::tolower);
 
     if (input == "paper") return Item::Paper;
